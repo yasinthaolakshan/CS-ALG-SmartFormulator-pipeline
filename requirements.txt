@@ -1,0 +1,12 @@
+# Python 3.12
+scikit-learn==1.9.0
+xgboost==3.2.0
+optuna==4.9.0          # NSGA-II inverse design uses optuna.samplers.NSGAIISampler
+rdkit==2026.03.3
+joblib==1.5.3
+pandas
+numpy
+requests              # PubChem drug-name -> SMILES resolution (app/formulator_engine.py)
+openpyxl              # reading data/api_smiles.xlsx
+# PDF-to-Markdown extraction stage (development pipeline)
+docling

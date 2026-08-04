@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper and this archived release."
+title: "CS-ALG SmartFormulator: reproducibility repository"
+authors:
+  - family-names: Ranasinghe
+    given-names: Ranepura Hewage Yasintha Lakshan
+  - family-names: Sangsawat
+    given-names: Monsin
+  - family-names: Sirichotejirakul
+    given-names: Adisorn
+  - family-names: Malabanan
+    given-names: John Wilfred T.
+  - family-names: Kida
+    given-names: Kohei
+  - family-names: Moribe
+    given-names: Kunikazu
+  - family-names: Song
+    given-names: Yilin
+  - family-names: Thitikornpong
+    given-names: Worathat
+  - family-names: Rojsitthisak
+    given-names: Pornchai
+  - family-names: Rojsitthisak
+    given-names: Pranee
+repository-code: "https://github.com/yasinthaolakshan/CS-ALG-SmartFormulator-pipeline"
+url: "https://cs-alg-smartformulator.streamlit.app"
+version: "1.0.0"
+date-released: 2026-08-04
+license: MIT
+preferred-citation:
+  type: article
+  title: "An End-to-End Automated Pipeline for Inverse Design of Chitosan-Alginate Nanoparticle Drug-Delivery Systems: From LLM-Based Literature Extraction to a Deployed Web Application"
+  journal: "Journal of Pharmaceutical Investigation"
+  year: 2026
+  authors:
+    - family-names: Ranasinghe
+      given-names: Ranepura Hewage Yasintha Lakshan
