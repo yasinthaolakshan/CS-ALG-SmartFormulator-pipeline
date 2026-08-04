@@ -113,5 +113,4 @@ Credentials Configuration node at run time.
 
 ## Citation
 
-If you use this repository, please cite the paper (see `CITATION.cff`) and this
-archived release (Zenodo DOI: **TO BE ADDED after first release**).
+If you use this repository, please cite the associated paper (see `CITATION.cff`).
