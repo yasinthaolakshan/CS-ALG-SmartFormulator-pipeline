@@ -89,7 +89,7 @@ final_rf = RandomForestRegressor(
     min_samples_leaf=  int(knio.flow_variables.get('min_samples_leaf', 1)),
     max_features=      max_features_val,
     random_state=      42,
-    n_jobs=            -1 # Utilize all CPU cores for efficiency
+    n_jobs=            1 # single-threaded for bit-level reproducibility
 )
 
 # =============================================================================

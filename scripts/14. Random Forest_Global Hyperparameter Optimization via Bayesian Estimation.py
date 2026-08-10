@@ -95,7 +95,7 @@ def objective(trial):
         'min_samples_leaf':  trial.suggest_int('min_samples_leaf', 1, 5),
         'max_features':      trial.suggest_categorical('max_features', ['sqrt', 'log2', 0.5]),
         'random_state':      42,
-        'n_jobs':            -1  # Parallelize across all available computing cores
+        'n_jobs':            1  # Parallelize across all available computing cores
     }
     
     # Scikit-learn >= 1.4 natively routes np.nan dynamically at split nodes

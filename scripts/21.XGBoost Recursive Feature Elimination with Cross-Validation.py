@@ -88,7 +88,7 @@ params = {
     'min_child_weight': int(knio.flow_variables.get('xgb_min_child_weight', 1)),
     'random_state':     42,
     'verbosity':        0,
-    'n_jobs':           -1  # Leverage multi-core distribution for local computation
+    'n_jobs':           1  # Leverage multi-core distribution for local computation
 }
 
 # =============================================================================
@@ -102,7 +102,7 @@ rfecv = RFECV(
     cv=fold_indices,
     scoring='neg_root_mean_squared_error',
     min_features_to_select=1,
-    n_jobs=-1
+    n_jobs=1
 )
 
 print("Executing iterative feature elimination (this may take a moment)...")

@@ -94,7 +94,7 @@ params = {
     'min_child_weight': int(knio.flow_variables.get('xgb_min_child_weight', 1)),
     'random_state':     42,
     'verbosity':        0,
-    'n_jobs':           -1  # Leverage multi-core distribution for local computation
+    'n_jobs':           1  # Leverage multi-core distribution for local computation
 }
 
 # =============================================================================

@@ -94,7 +94,7 @@ def objective(trial):
         'random_state':      42,
         'verbosity':         0,
         'eval_metric':       'rmse',
-        'n_jobs':            -1  # Parallelize across all available computing cores
+        'n_jobs':            1  # Parallelize across all available computing cores
     }
     
     model = XGBRegressor(**params)

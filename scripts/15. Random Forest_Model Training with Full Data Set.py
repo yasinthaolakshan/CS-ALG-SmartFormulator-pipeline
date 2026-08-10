@@ -53,7 +53,7 @@ final_rf = RandomForestRegressor(
     min_samples_leaf=  int(knio.flow_variables['min_samples_leaf']),
     max_features=      max_features,
     random_state=42,
-    n_jobs=-1
+    n_jobs=1
 )
 
 # ── 4. TRAIN ON 100% OF THE DATA ────────────────────────────

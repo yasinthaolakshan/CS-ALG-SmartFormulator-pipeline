@@ -97,7 +97,7 @@ rf = RandomForestRegressor(
     min_samples_leaf=min_samples_leaf,
     max_features=max_features_val,
     random_state=42,
-    n_jobs=-1
+    n_jobs=1
 )
 
 # Perform Recursive Feature Elimination using Root Mean Squared Error
@@ -107,7 +107,7 @@ rfecv = RFECV(
     cv=fold_indices,
     scoring='neg_root_mean_squared_error',
     min_features_to_select=1,
-    n_jobs=-1
+    n_jobs=1
 )
 
 print("Executing iterative feature elimination (this may take a moment)...")

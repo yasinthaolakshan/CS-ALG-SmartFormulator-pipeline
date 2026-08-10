@@ -3,8 +3,8 @@
 Reproducibility repository for the manuscript:
 
 > **An End-to-End Automated Pipeline for Inverse Design of Chitosan–Alginate
-> Nanoparticle Drug-Delivery Systems: From LLM-Based Literature Extraction to a
-> Deployed Web Application.**
+> Nanoparticle Drug-Delivery Systems: From Large Language Model-Based Literature
+> Extraction to a Deployed Web Application.**
 > R.H.Y.L. Ranasinghe, M. Sangsawat, A. Sirichotejirakul, J.W.T. Malabanan,
 > K. Kida, K. Moribe, Y. Song, W. Thitikornpong, P. Rojsitthisak, P. Rojsitthisak.
 
@@ -42,6 +42,15 @@ Install the Python dependencies with:
 ```
 pip install -r requirements.txt
 ```
+
+The exact conda environment used to produce the reported results (a full package
+listing with versions) is provided in `conda_environment_packages.md`.
+
+**Reproducibility note.** All estimators are run single-threaded (`n_jobs = 1`)
+with fixed seeds (`random_state = 42`, `TPESampler(seed = 42)`). This guarantees
+bit-level reproducibility of the reported metrics; parallel execution
+(`n_jobs = -1`) can perturb Random Forest predictions through the accumulation
+order of floating-point operations across threads.
 
 ## Reproducing the pipeline
 
@@ -95,6 +104,11 @@ The extraction stage calls a large language model through KNIME's
 OpenAI-compatible nodes. **No API key is stored in this repository.** To re-run
 the extraction, supply your own OpenAI-compatible API key in the workflow's
 Credentials Configuration node at run time.
+
+**Important:** in the Credentials Configuration node, tick **"Save password in
+configuration (weakly encrypted)"** so the key is propagated to the downstream
+LLM nodes at execution time. Without this option enabled the credential is not
+passed through and the extraction nodes will fail to authenticate.
 
 ## What is intentionally not included
 
