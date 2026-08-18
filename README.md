@@ -5,8 +5,8 @@ Reproducibility repository for the manuscript:
 > **An End-to-End Automated Pipeline for Inverse Design of Chitosan–Alginate
 > Nanoparticle Drug-Delivery Systems: From Large Language Model-Based Literature
 > Extraction to a Deployed Web Application.**
-> R.H.Y.L. Ranasinghe, M. Sangsawat, A. Sirichotejirakul, J.W.T. Malabanan,
-> K. Kida, K. Moribe, Y. Song, W. Thitikornpong, P. Rojsitthisak, P. Rojsitthisak.
+> Yasintha Lakshan Ranasinghe Ranepura Hewage, Monsin Sangsawat, Adisorn Sirichotejirakul,
+> John Wilfred T. Malabanan, Yilin Song, Pornchai Rojsitthisak, Pranee Rojsitthisak.
 
 This repository contains everything needed to reproduce the development pipeline
 (literature extraction → curation → featurization → nested-CV model training →
